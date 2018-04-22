@@ -1,20 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    width:50%;
+}
+</style>
+</head>
+
+<body>
 <h1>SoundClout Application User Guide</h1>
 <br>
 <p style="font-family:courier;">The Soundclout app is an application intended to control and distribute a series of instructions to raspberry pi devices for use in a sound art installation. Even though the intended use of the app is for an art installation, it can still serve as a generalized raspberry pi controller.</p>
 <p style="font-family:courier;">The raspberry pis need to be configured with specific code we have developed in order to properly recieve and execute instructions from the soundclout app. A guide for setting up the RPi devices can be found <a href="https://github.com/SCCapstone/SoundClout/wiki/Raspberry-Pi-MotorSlider-circuit-diagram">here</a>.</p>
+<p>Home Screen:</p>
 <br>
 <img src="./images/home.png" alt="Homescreen">
 <br>
 
 <p style="font-family:courier;">To get started you must connect to the raspberry pis you intend on using. Go to the "Connect Devices" Page.</p>
+<p>Connected Devices page:</p>
 <img src="./images/connectdev.png" alt="Connected Devices">
-<p style="font-family:courier;"> First make sure your computer's bluetooth is ON. Hit scan<em>(1)</em> and the app will search the list of bluetooth enabled devices in the area for the configured raspberry pis. The list of devices that show up in the list under scan<em>(2)</em> will only be the pis that are configured for the app- so any other devices in the area won't be available to make a connection. Click on the device name in the list to add it to your list of connected devices<em>(3)</em>. If you wish to disconnect from a device simply click on the name in the connected devices area<em>(3)</em>. If you want to disconnect from all devices, hit the button<em>(4)</em>. Click the home icon in the top left corner to return to the main screen.</p>
+<p style="font-family:courier;"> First make sure your computer's bluetooth is ON. Hit scan<em color="#ff0000">(1)</em> and the app will search the list of bluetooth enabled devices in the area for the configured raspberry pis. The list of devices that show up in the list under scan<em color="#ff0000">(2)</em> will only be the pis that are configured for the app- so any other devices in the area won't be available to make a connection. Click on the device name in the list to add it to your list of connected devices<em color="#ff0000">(3)</em>. If you wish to disconnect from a device simply click on the name in the connected devices area<em color="#ff0000">(3)</em>. If you want to disconnect from all devices, hit the button<em color="#ff0000">(4)</em>. Click the home icon in the top left corner to return to the main screen.</p>
 <br>
 
 <p style="font-family:courier;">To test the raspberry pis you are connected to, navigate to the "Device Tester" screen.</p>
+<p>Device Tester Screen:</p>
 <img src="./images/testdev.png" alt="Test Devices">
-<p style="font-family:courier;">There will be a list of the devices you are connected to<em>(1)</em> and then you can toggle the switches<em>(2)</em> next to the name to "ON" and hit the test button<em>(3)</em> to start running the components connected to the Pi(s).</p>
+<p style="font-family:courier;">There will be a list of the devices you are connected to<em color="#ff0000">(1)</em> and then you can toggle the switches<em>(2)</em> next to the name to "ON" and hit the test button<em color="#ff0000">(3)</em> to start running the components connected to the Pi(s).</p>
 <p style="font-family:courier;">Once you are satisfied everything is working as intended you can start grouping together your devices</p>
 <br>
 
 <p style="font-family:courier;">Go to the "Edit Device Groups page" to begin adding devices.</p>
+<p>Edit Device Groups Page:</p>
+<img src="./images/editdevgroup.png" alt="Edit Device Groups">
+<p style="font-family:courier;">Select Create Group<em color="#ff0000">(1)</em> to create a new group. Groups are collections of devices that all receive the same instructions from the application. Alternatively you can Load Groups<em color="#ff0000">(2)</em> to load a configuration you have previously saved.</p>
+<p>New Group Screen:</p>
+<img src="./images/newgroup.png" alt="New Device Groups">
+<p style="font-family:courier;">Where it says "New Group"<em color="#ff0000">(1)</em> you can name the group whatever you'd like and then hit ok<em color="#ff0000">(2)</em> when you're satisfied.</p>
+<p>You'll see this after you hit ok:</p>
+<img src="./images/group settings.png" alt="Group Settings">
+<p style="font-family:courier;">Now you can see your group settings and the devices that you're connected to<em color="#ff0000">(1)</em> in this page. Hit the switch<em color="#ff0000">(2)</em> to choose which devices are active inside of this group. Hit back<em color="#ff0000">(3)</em> to go back to the edit device groups screen - or hit remove<em color="#ff0000">(4)</em> to delete this group.</p>
+<p>Now the Edit Device Groups page looks like this:</p>
+<img src="./images/editdevgroup2.png" alt="Edit Device Groups2">
+<p style="font-family:courier;">You can now see the groups you have made in the edit device groups screen. You can click save<em color="#ff0000">(1)</em> to save your current group configurations if you want to.</p>
+<p style="font-family:courier;">Now we can return to the main screen.</p>
+<br>
+
+<p style="font-family:courier;">Navigate to the "Edit Group Behavior" screen to start building a timeline. A timeline is a group of time slots that tell each device group how to behave during that slot of time. When the app is running the time slots are executed in order.</p>
+<p>Edit Group Behavior Screen:</p>
+<img src="./images/edit group behavior.png" alt="Edit Group Behavior">
+<p style="font-family:courier;">Hit build timeline<em color="#ff0000">(1)</em> to create a new one or load timeline<em color="#ff0000">(2)</em> to load a timeline configuration you've already made</p>
+
+
+
+</body>
+</html>
